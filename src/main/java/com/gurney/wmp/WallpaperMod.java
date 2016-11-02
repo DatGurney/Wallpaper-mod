@@ -1,5 +1,6 @@
 package com.gurney.wmp;
 
+import com.gurney.wmp.items.ModItems;
 import com.gurney.wmp.proxy.CommonProxy;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -13,12 +14,13 @@ public class WallpaperMod {
     @Mod.Instance
     public static  WallpaperMod instance;
 
-    @SidedProxy(clientSide = CONSTANTS.CLIENT_PROXY_CLASS, serverSide = CONSTANTS.SERVER_PROXY_CLASS)
+    @SidedProxy(clientSide = CONSTANTS.CLIENT_PROXY_CLASS, serverSide = CONSTANTS.COMMON_PROXY_CLASS)
     public static CommonProxy proxy;
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
+        ModItems.init();
         System.out.println("Loading. PreInit");
     }
     @Mod.EventHandler
