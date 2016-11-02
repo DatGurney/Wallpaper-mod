@@ -4,14 +4,11 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-/**
- * Created by gerra on 26/10/2016.
- */
 public class ModItems {
     public static ItemBase itemRedBlock1;
 
     public static void init() {
-        itemRedBlock1 = register(new ItemBase("itemRedBlock1").setCreativeTab(CreativeTabs.DECORATIONS));
+        itemRedBlock1 = (ItemBase) register(new ItemBase("itemRedBlock1").setMaxStackSize(1).setCreativeTab(CreativeTabs.DECORATIONS));
     }
 
     private static <T  extends Item> T register(T item){

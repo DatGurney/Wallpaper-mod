@@ -4,7 +4,7 @@ import scala.tools.nsc.doc.model.Public;
 
 public class CONSTANTS {
 
-    public static final String MOD_ID = "wpm";
+    public static final String MOD_ID = "wmp";
     public static final String NAME = "Wallpaper Mod";
     public static final String VERSION = "alpha 0.10";
     public static final String MINECRAFT_VERSIONS = "[1.10.2]";
