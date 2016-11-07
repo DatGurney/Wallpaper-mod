@@ -1,5 +1,6 @@
 package com.gurney.wmp;
 
+import com.gurney.wmp.blocks.ModBlocks;
 import com.gurney.wmp.items.ModItems;
 import com.gurney.wmp.proxy.CommonProxy;
 import net.minecraftforge.fml.common.Mod;
@@ -21,6 +22,8 @@ public class WallpaperMod {
     public void preInit(FMLPreInitializationEvent event)
     {
         ModItems.init();
+        ModBlocks.init();
+
         System.out.println("Loading. PreInit");
     }
     @Mod.EventHandler

@@ -4,6 +4,7 @@ import com.gurney.wmp.WallpaperMod;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
+//A class which allows me to easily create items
 public class ItemBase extends Item {
     protected String name;
 
